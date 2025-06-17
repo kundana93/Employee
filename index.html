@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employees Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div id="home">
+    <h1>Employees Data</h1>
+    <h2>EData</h2>
+    <button onclick="showPage('signup')">Sign Up</button>
+    <button onclick="showPage('login')">Login</button>
+  </div>
+
+  <!-- Sign Up Page -->
+  <div id="signupPage" class="hidden">
+    <h2>Register</h2>
+    <input type="text" id="signupName" placeholder="Full Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+    <input type="password" id="signupConfirm" placeholder="Confirm Password">
+    <button onclick="submitSignup()">Submit</button>
+  </div>
+
+  <!-- Login Page -->
+  <div id="loginPage" class="hidden">
+    <h2>Welcome Back</h2>
+    <input type="text" id="loginName" placeholder="Full Name">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="submitLogin()">Login</button>
+  </div>
+
+  <!-- Welcome Page -->
+  <div id="welcomePage" class="hidden">
+    <h2 id="welcomeMessage">Welcome!</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
